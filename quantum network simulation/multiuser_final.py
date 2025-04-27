@@ -210,11 +210,7 @@ class QKDNetwork:
                 num_half_noise += count_dict.get(-element, 0)
         num_full_noise=num_full_noise-num_full_eff
         num_half_noise=num_half_noise-num_half_eff
-        '''
-        if num_full_noise+num_half_noise>4:
-            num_full_noise=num_full_noise + 1
-            num_half_noise=num_half_noise-2
-        '''
+      
         return num_full_eff, num_half_eff, num_full_noise, num_half_noise
     
     
